@@ -14,7 +14,7 @@ namespace GV_Max_Rotation
     [MySessionComponentDescriptor(MyUpdateOrder.Simulation, 999)]
     public class RelativeTopSpeed : MySessionComponentBase
     {
-        public const float MaxMassAngMult = 0.01f;
+        public const float MaxMassAngMult = 0.1f;
         public const float MaxSpeedAngMult = 0.25f;
         public const float MaxMass = 5000000f;
         public const float MinMass = 1f;
@@ -140,7 +140,7 @@ namespace GV_Max_Rotation
                     }
                 }
 
-                waitInterval = 60; // reset, was 180
+                waitInterval = 15; // reset, was 180
             }
 
             for (int i = 0; i < ActiveGrids.Count; i++)
